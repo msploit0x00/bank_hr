@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-02 11:53:20.083047",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_oqx2",
+  "date_of_transfer",
+  "employee",
+  "column_break_wbjm",
+  "from_branch",
+  "section_break_ku6c",
+  "to_branch",
+  "column_break_wjo3",
+  "replace_with_employee",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_oqx2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_of_transfer",
+   "fieldtype": "Date",
+   "label": "Date of Transfer"
+  },
+  {
+   "description": "Select Employee want to transfer",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_wbjm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.branch",
+   "fieldname": "from_branch",
+   "fieldtype": "Link",
+   "label": "From Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_ku6c",
+   "fieldtype": "Section Break",
+   "label": "Replacement Data"
+  },
+  {
+   "fieldname": "to_branch",
+   "fieldtype": "Link",
+   "label": "To Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_wjo3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "replace_with_employee",
+   "fieldtype": "Link",
+   "label": "Replace with Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Replacement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-02 11:57:15.907593",
+ "modified_by": "Administrator",
+ "module": "Bank Hr",
+ "name": "Employee Replacement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
